@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Registration</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="./fontello-72db28ad/css/fontello.css">
 </head>
 <body>
@@ -13,28 +15,29 @@
 <div class="container">
     <div class="row">
         <header class="col-xs-12">
-            <ul class="header__menu">
-                <li class="header__left-column">
+            <ul data-header-menu class="header__menu row">
+                <li class="header__left-column col-md-5">
                     <ul>
                         <li>
                             follow us on:
-                            <ul>
+                            <ul class="header__social">
                                 <li>
-                                    <a href="#" class="icon-facebook"><span class="hidden-md"> Facebook</span></a>
+                                    <a href="#" class="icon-facebook icon"><span class="hidden-md hidden-lg"> Facebook</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="icon-youtube"><span class="hidden-md"> Youtube</span></a>
+                                    <a href="#" class="icon-youtube icon"><span class="hidden-md hidden-lg"> Youtube</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="icon-instagram"><span class="hidden-md"> Instagram</span></a>
+                                    <a href="#" class="icon-instagram icon">
+                                        <span class="hidden-md hidden-lg"> Instagram</span></a>
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            Our company
-                            <ul>
+                        <li data-sticky-head>
+                            <span class="hidden-md hidden-lg">Our company</span>
+                            <ul class="header__our-company">
                                 <li>
-                                    <a href="#">
+                                    <a href="#" class="active">
                                         <span>Our </span><span>Products</span>
                                     </a>
                                 </li>
@@ -57,64 +60,181 @@
                         </li>
                     </ul>
                 </li>
-                <li class="hidden-xs header__center-column">
+                <li class="hidden-xs hidden-sm header__center-column col-md-2">
                     <a href="#" class="header__logo">
                         <img src="./img/Logo.png" alt="logo"/>
                     </a>
                 </li>
-                <li class="header__right-column">
+                <li class="header__right-column col-md-5">
                     <ul>
-                        <li>
-                            User Settings
+                        <li class="header__user-settings">
+                            <span class="hidden-md hidden-lg">User Settings</span>
                             <ul>
                                 <li>
-                                    <label>
+                                    <label class="header__language">
                                         <select>
                                             <option value="fr">FR</option>
                                             <option value="ru">RU</option>
                                         </select>
-                                        <span class="icon-down-open"></span>
+                                        <span class="icon-down-open icon"></span>
                                     </label>
                                 </li>
                                 <li>
                                     <a href="#">
                                         Newsletter
-                                        <span class="icon-mail"></span>
+                                        <span class="icon-mail icon"></span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         Log in
-                                        <span class="icon-torso"></span>
+                                        <span class="icon-torso icon"></span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                        <span>Store</span><span> Finder</span>
-                        <ul>
-                            <li>
+                            <span class="header__store-finder">
                                 <a href="#">
-                                    Get free sample
-                                    <span class="icon-right-open"></span>
+                                    <span>Store</span><span> Finder</span>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    My Mixa mag
-                                    <span class="icon-library"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="icon-search"> <span class="hidden-md">Search</span></span></a>
-                            </li>
-                        </ul>
-                    </li>
+                            </span>
+                            <ul class="header__store">
+                                <li>
+                                    <a href="#" class="header__btn">
+                                        Get free sample
+                                        <span class="icon-right-open icon"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__btn">
+                                        My Mixa mag
+                                        <span class="icon-library icon"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="icon-search icon">
+                                        <span class="hidden-md hidden-lg">Search</span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </header>
     </div>
 </div>
+<main class="content">
+    <div class="container">
+        <div class="row">
+            <div class="form-container">
+                <div class="form-description">
+                    <h1>Contact us</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when
+                        looking at its layout.</p>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution
+                        of letters, as opposed to using 'Content here, content here'.</p>
+                </div>
+                <form class="registration-form">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <fieldset class="registration-form__fieldset">
+                                <h4 class="registration-form__legend">Subject of request</h4>
+                                <label class="registration-form__form-group">
+                                    <p><span>Choose your theme</span></p>
+                                    <select name="theme" data-select class="registration-form__input" required id="theme" name="theme">
+                                        <option value="1" selected disabled hidden></option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                    </select>
+                                </label>
+                                <label class="registration-form__form-group">
+                                    <p><span>Product concerned</span></p>
+                                    <select data-select name="concerned" class="registration-form__input" required>
+                                        <option value="1" selected disabled hidden></option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                    </select>
+                                </label>
+                                <label class="registration-form__form-group">
+                                    <p><span>Product lot &#x2116</span></p>
+                                    <input data-field name="lot" type="text" required/>
+                                </label>
+                                <label class="registration-form__form-group--textarea">
+                                    <p><span>Choose your theme</span></p>
+                                    <textarea data-field maxlength="200" name="yourtheme" required></textarea>
+                                    <span class="registration-form__textarea-counter">0/200</span>
+                                </label>
+                            </fieldset>
+                        </div>
+                        <div class="col-sm-6">
+                            <fieldset class="registration-form__fieldset">
+                                <h4 class="registration-form__legend">You</h4>
+                                <label class="registration-form__form-group">
+                                    <p><span>Title</span></p>
+                                    <select data-select name="title" class="registration-form__input" required>
+                                        <option value="1" selected disabled hidden></option>
+                                        <option value="2">Mr</option>
+                                        <option value="3">Mrs</option>
+                                    </select>
+                                </label>
+                                <label class="registration-form__form-group">
+                                    <p><span>First name</span></p>
+                                    <input data-field name="firstName" type="text" required/>
+                                </label>
+                                <label class="registration-form__form-group">
+                                    <p><span>Last name</span></p>
+                                    <input data-field name="lastName" type="text" required/>
+                                </label>
+                                <label class="registration-form__form-group">
+                                    <p><span>Birthday</span></p>
+                                    <input data-field name="birthday" type="text" required/>
+                                </label>
+                                <label class="registration-form__form-group">
+                                    <p><span>Phone number</span></p>
+                                    <input data-telephone name="phone" type="text" required/>
+                                </label>
+                                <label class="registration-form__form-group">
+                                    <p><span>E-mail</span></p>
+                                    <input data-email name="mail" type="email" required/>
+                                </label>
+                            </fieldset>
+                            <fieldset class="registration-form__fieldset">
+                                <h4 class="registration-form__legend">Your address</h4>
+                                <label class="registration-form__form-group">
+                                    <p><span>Street</span></p>
+                                    <input data-field name="street" type="text" required/>
+                                </label>
+                                <label class="registration-form__form-group">
+                                    <p><span>city</span></p>
+                                    <input data-field name="city" type="text" required/>
+                                </label>
+                                <label class="registration-form__form-group">
+                                    <p><span>Postcode</span></p>
+                                    <input data-field name="postcode" type="text" required/>
+                                </label>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 registration-form__btn-wrapper">
+                            <input data-submit class="registration-form__submit-btn" type="submit" value="Submit >"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Include scripts -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="./scripts/validate.js"></script>
+<script src="./scripts/sticky-footer.js"></script>
 </body>
 </html>
