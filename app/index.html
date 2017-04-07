@@ -12,20 +12,22 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container" style="height:187px">
     <div class="row">
-        <header class="col-xs-12">
-            <ul data-header-menu class="header__menu row">
+        <header header class="col-xs-12 ">
+            <ul class="header__menu sticky row">
                 <li class="header__left-column col-md-5">
                     <ul>
                         <li>
                             follow us on:
                             <ul class="header__social">
                                 <li>
-                                    <a href="#" class="icon-facebook icon"><span class="hidden-md hidden-lg"> Facebook</span></a>
+                                    <a href="#" class="icon-facebook icon"><span
+                                            class="hidden-md hidden-lg"> Facebook</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="icon-youtube icon"><span class="hidden-md hidden-lg"> Youtube</span></a>
+                                    <a href="#" class="icon-youtube icon"><span
+                                            class="hidden-md hidden-lg"> Youtube</span></a>
                                 </li>
                                 <li>
                                     <a href="#" class="icon-instagram icon">
@@ -33,7 +35,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li data-sticky-head>
+                        <li>
                             <span class="hidden-md hidden-lg">Our company</span>
                             <ul class="header__our-company">
                                 <li>
@@ -125,7 +127,7 @@
         </header>
     </div>
 </div>
-<main class="content">
+<main data-content class="content">
     <div class="container">
         <div class="row">
             <div class="form-container">
@@ -147,7 +149,8 @@
                                 <h4 class="registration-form__legend">Subject of request</h4>
                                 <label class="registration-form__form-group">
                                     <p><span>Choose your theme</span></p>
-                                    <select name="theme" data-select class="registration-form__input" required id="theme" name="theme">
+                                    <select name="theme" data-select class="registration-form__input" required
+                                            id="theme" name="theme">
                                         <option value="1" selected disabled hidden></option>
                                         <option value="2">1</option>
                                         <option value="3">2</option>
@@ -233,8 +236,9 @@
 </main>
 
 <!-- Include scripts -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="./scripts/validate.js"></script>
-<script src="./scripts/sticky-footer.js"></script>
+<script src="scripts/sticky-headre.js"></script>
 </body>
 </html>
